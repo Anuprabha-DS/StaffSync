@@ -1,0 +1,88 @@
+/* Add these styles to the parent container (usually <body> or a wrapper element) */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the parent container take up full height of the viewport */
+    margin: 50px; /* Removes default body margin */
+  }
+  
+  .dashboard-container {
+    width: 80%;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+
+  h2, h3 {
+    color: #333;
+  }
+  
+  .form-container, .department-list {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-btn {
+    width: 200px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-left: 4px solid #007bff;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
