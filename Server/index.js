@@ -16,9 +16,9 @@ syncDB().then(() => {
 });
 
 app.use(cors({
-    origin: "*", // Allow all domains (for testing only)
-    methods: "GET,POST,PUT,DELETE,PATCH",
-    allowedHeaders: "Content-Type,Authorization"
+    origin: "*", 
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], 
+    allowedHeaders: ["Content-Type", "Authorization"], 
 }));
 
 // app.use(cors())
