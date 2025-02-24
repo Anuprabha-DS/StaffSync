@@ -15,8 +15,13 @@ syncDB().then(() => {
     console.error('❌ Application failed to start:', error);
 });
 
+app.use(cors({
+    origin: "*", // Allow all domains (for testing only)
+    methods: "GET,POST,PUT,DELETE,PATCH",
+    allowedHeaders: "Content-Type,Authorization"
+}));
 
-app.use(cors())
+// app.use(cors())
 app.use(express.json())
 app.use(cookieParser())
 
